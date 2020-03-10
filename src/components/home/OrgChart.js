@@ -32,10 +32,11 @@ const config = {
                 tooltip: '<b>Tasks:</b><br><span style=\'listStyleType: circle; listPadding: 0;\'>%tasks</span>'
             },
             points: [
+                // To use information from the database, this should map through an array of people and dynamically populate the desired fields.
                 {
                     name: 'Melody Stern', id: 'ms', color: '#0059b3', label_color: 'white',
                     attributes: {
-                        'img': '../../images/melody.jpg',
+                        'img': 'https://wrisenergy.org/wp-content/uploads/2019/06/Professional-headshot-square.jpg',
                         'data': '<ul><li>President</li><li>630-555-1111</li><li><i>Batavia, IL</i></li></ul>',
                         'tasks': '<ul><li>Operations</li><li>Bookkeeping</li><li><i>Strategy</i></li></ul>'
                     }
@@ -43,7 +44,7 @@ const config = {
                 {
                     name: 'Mark Hudson', id: 'mh', parent: 'ms',
                     attributes: {
-                        'img': '../samples/images/Org2.png',
+                        'img': 'https://images.squarespace-cdn.com/content/v1/530a77dee4b035db71736c02/1569338234137-XN0AR0PLJO5DZ81FSEER/ke17ZwdGBToddI8pDm48kN-beAKDw50kUtknGgMt8vt7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQcamhoEVvCJUcAD0bQa0T2B3ZOZwG7qQqBbrPxYiNGblZKtLIjH2wwwSeWmNyrTOg/Connecticut+Headshots+-+Seshu+Badrinath+-+peter-hurley-nyc-000+%28square%29.jpg',
                         'data': '<ul><li>Vice President Marketing</li><li>630-555-1111</li><li><i>Hanover Park, IL</i></li></ul>',
                         'tasks': '<ul><li>Product Strategy</li><li>Artistic Direction</li><li><i>Product Design</i></li></ul>'
                     }
@@ -51,7 +52,7 @@ const config = {
                 {
                     name: 'Chris Lysek', id: 'cl', parent: 'ms',
                     attributes: {
-                        'img': '../samples/images/Org5.png',
+                        'img': 'https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/7129/square_thumb%403x.jpg',
                         'data': '<ul><li>Vice President Sales</li><li>630-555-2222</li><li><i>West Chicago, IL</i></li></ul>',
                         'tasks': '<ul><li>Sales HR</li><li>Market Development</li></ul>'
                     }
@@ -59,7 +60,7 @@ const config = {
                 {
                     name: 'Karyn Borbas', id: 'kb', parent: 'mh',
                     attributes: {
-                        'img': '../samples/images/Org7.png',
+                        'img': 'https://www.generalatlantic.com/wp-content/uploads/2017/11/square-crop-emily-tung-general-atlantic-headshot.jpg',
                         'data': '<ul><li>Marketing Manager</li><li>312-555-3333</li><li><i>Chicago, IL</i></li></ul>',
                         'tasks': '<ul><li>Purchasing</li><li>Review</li></ul>'
                     }
@@ -67,7 +68,7 @@ const config = {
                 {
                     name: 'Chris Rup', id: 'cr', parent: 'mh',
                     attributes: {
-                        'img': '../samples/images/Org3.png',
+                        'img': 'https://format-com-cld-res.cloudinary.com/image/private/s--hydRjvcM--/c_limit,g_center,h_65535,w_1600/fl_keep_iptc.progressive,q_95/v1/6c95a3ad4915a5c72d9d707a63179cfd/elyn-photography-headshots-professional-CG-72dpi-SQUARE-1.jpg',
                         'data': '<ul><li>Marketing Manager</li><li>773-555-4444</li><li><i>Chicago, IL</i></li></ul>',
                         'tasks': '<ul><li>Marketing HR</li><li>Market Research</li></ul>'
                     }
@@ -79,7 +80,7 @@ const config = {
 
 const divStyle = {
     maxWidth: '90%',
-    height: '90%',
+    height: '100%',
     margin: '0px auto'
 };
 
